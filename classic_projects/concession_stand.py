@@ -67,8 +67,5 @@ def main():
     print("----------------")
     print(f"Total: {total} {'EUR'}")
 
-
-
- 
 if __name__ == "__main__":
     main()
