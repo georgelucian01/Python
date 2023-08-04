@@ -37,6 +37,9 @@ def main():
                 break
             if buy not in menu.keys():
                 buy = input("What do you to buy? (exit to quit) ")
+                if buy == 'exit':
+                    stop = True
+                    break
             break
 
         if stop:
