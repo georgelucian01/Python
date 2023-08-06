@@ -19,16 +19,22 @@ def main():
     while True:
         q2 = input("Do you to encrypt or decrypt? (enc\dec): ").lower()
         if q2 == "enc":
-
+            
+            print()
             plain_text = input("Enter message to encrypt: ")
             encrypted = encryption.encrypt_decrypt(plain_text, chars, keys)
+            print()
             print(f"Encrypted text is: {encrypted}")
+            print()
 
         elif q2 == "dec":
 
+            print()
             plain_text = input("Enter message to decrypt: ")
             decrypted = encryption.encrypt_decrypt(plain_text, keys, chars)
+            print()
             print(f"Decrypted text is: {decrypted}")
+            print()
         else:
             continue
         break
